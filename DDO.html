@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="complaint.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar.js">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main-container"></div>
+    <div style="width: 100%;">
+        <div class="d-flex h-5" style="height: auto; ">
+            <div class="logo">
+                <img class="logo-container" src="SSIP_LOGo.png" alt="Flowers in Chania">
+  
+            </div>
+            <div class="container1">
+                
+                <div class="menu">
+                    <div class="bar">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container-fluid">
+                              
+                              <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-mdb-toggle="collapse"
+                                data-mdb-target="#navbarNavAltMarkup"
+                                aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                              >
+                                <i class="fas fa-bars"></i>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="navbar-brand" href="base.html">PersonalInfo</a>
+                                    <a class="nav-link" href="complaint.html">Make Complaint</a>
+                                    <a class="nav-link" href="trackinguser.html">Track Complaint</a>
+                                    <a class="nav-link" href="feedback.html">Feedback</a>
+                                  <div class="search">
+                                    <form class="example" action="action_page.php">
+                                        <input type="text" placeholder="Search.." name="search">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>                 
+                                  </div>
+                                  <img class="profile-container" src="SSIP_LOGo.png" alt="Flowers in Chania">
+                                </div>
+                              </div>
+                            </div>
+                            
+                
+                        </nav>
+                      </div>    
+                    </div>
+                    
+              </div>
+            
+                
+        </div>
+        
+        <div class="d-flex flex-row" style=" background-color: rgba(250, 235, 215, 0);">
+            <div class="" style="margin-right: 50px;">
+               
+            </div>
+            <div class="" style=" background-color: rgba(250, 235, 215, 0);">
+                <div class="container" style="padding: 10px;">
+                    <div class="container fs-3 fw-bold d-flex justify-content-start" style="color: rgb(141, 0, 0);">
+                        Register Your Complaint
+                    </div>
+                    <div class="container d-flex flex-column justify-content-center p-2" style="background-color: rgba(217, 217, 217, 0);">
+                        <div class="container fw-bold" style="font-size: 15px;">
+                            Catagory
+                            <form action="connect.php" method="POST" class="was-validated">
+                            <div class="mb-3">
+                                
+                                  
+                                 <div style="border-radius: 20px;
+                                 border: none;
+                                 margin-right: 8px;  
+                                 box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;  
+                                 width: 100%;  
+                                 box-sizing: border-box;  
+                                 transition: all 0.2s ease-in-out;  
+                                 appearance: none;  
+                                 -webkit-appearance: none;
+                                 height: 36px;
+                                 ">
+                                   <div style="margin-left: 20px;
+                                   padding-top: 8px;">
+                                      District Development Officer
+                                   </div>
+                                 </div>
+                                
+                                
+                                <!-- <ul id="dropmenu">
+                                    <li><a href="#">Select</a>
+                                    <ul>
+                                        <li style="background-color: #babecc; width: 20px; "><button><a href="https://www.freecodecamp.org/news/how-to-build-a-responsive-and-dynamic-progress-bar/">DDO</a></button></li>
+                                        <li><a href="#">TDO</a></li>
+                                        <li><a href="#">talati</a></li>
+                                    </ul></li>
+                                </ul> -->
+                              </div> 
+                        </div>
+                        <div class="container fw-bold" style="font-size: 15px;">
+                            Services
+                                <div class="mb-3">
+                                    <select name="service" class="form-select" id="topic" required aria-label="select example" style="
+                                    border-radius: 20px;
+                                    border: none;
+                                    margin-right: 8px;  
+                                    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;  
+                                    width: 100%;  
+                                    box-sizing: border-box;  
+                                    transition: all 0.2s ease-in-out;  
+                                    appearance: none;  
+                                    -webkit-appearance: none;">
+                                      <option value="" id="null">--Select--</option>
+                                      <option value="Electricity" id="Electricity">Electricity</option>
+                                      <option value="Corruption" id="Corruption">Corruption</option>
+                                      <option value="Funding" id="Funding">Funding</option>
+                                      <option value="Transportation" id="Transportation">Transportation</option>
+                                      <option value="Land acquried" id="Land acquried">Land acquried</option>
+                                      <option value="Water Management" id="Water Management">Water Management</option>
+                                      <option value="Cleanliness" id="Cleanliness">Cleanliness</option>
+                                      <option value="Other" id="Other">Other</option>
+                                      
+                                    </select>
+                                  </div> 
+                        </div>
+                        <div class="container fw-bold" style="font-size: 15px;">
+                        </div>
+                        <div class="container fw-bold" style="font-size: 15px;">x
+                            Discription
+                                <div class="mb-3">
+                                    <textarea name="discription" class="form-control" id="validationTextarea" placeholder="Please write Discription" style="
+                                    border-radius: 20px;
+                                    border: none;
+                                    margin-right: 8px;  
+                                    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;  
+                                    width: 100%;  
+                                    box-sizing: border-box;  
+                                    transition: all 0.2s ease-in-out;  
+                                    appearance: none;  
+                                    -webkit-appearance: none;" required></textarea>
+                                  </div>
+                                  <div>
+                                    <div class="input-group mb-3">
+                                      <div class="input-group">
+                                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="
+                                        border-radius: 20px;
+                                        border: none;
+                                        margin-right: 8px;  
+                                        box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;  
+                                        width: 100%;  
+                                        box-sizing: border-box;  
+                                        transition: all 0.2s ease-in-out;  
+                                        appearance: none;  
+                                        -webkit-appearance: none;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- <a href="feedback.html" class="Submitbtn" style="margin-top: 50px;">
+                                    <span class="Submitbtn">Submit</span>
+                                    <div class="liquid"></div>
+                                  </a> -->
+                                  <input name="submit" type="submit" style="width: 150px;
+                                  border-radius: 10px;
+                                  border: none;
+                                  margin-right: 8px;  
+                                  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+                                  background-color: #d7d6d6;
+                                  height: 34px;
+                                  box-sizing: border-box;  
+                                        transition: all 0.2s ease-in-out;  
+                                        appearance: none;  
+                                        -webkit-appearance: none">
+                                  <div class="chat-bar-collapsible">
+                                    <button id="chat-button" type="button" class="collapsible">Chat with us!
+                                        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+                                    </button>
+                            
+                                    <div class="content">
+                                        <div class="full-chat-block">
+                                            <!-- Message Container -->
+                                            <div class="outer-container">
+                                                <div class="chat-container">
+                                                    <!-- Messages -->
+                                                    <div id="chatbox">
+                                                        <h5 id="chat-timestamp"></h5>
+                                                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                                                    </div>
+                            
+                                                    <!-- User input box -->
+                                                    <div class="chat-bar-input-block">
+                                                        <div id="userInput">
+                                                            <input id="textInput" class="input-box" type="text" name="msg"
+                                                                placeholder="Tap 'Enter' to send a message">
+                                                            <p></p>
+                                                        </div>
+                            
+                                                        <div class="chat-bar-icons">
+                                                           
+                                                            <i id="chat-icon" style="color: rgb(192, 192, 192);" class="fa fa-fw fa-send"
+                                                                onclick="sendButton()"></i>
+                                                        </div>
+                                                    </div>
+                            
+                                                    <div id="chat-bar-bottom">
+                                                        <p></p>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                </form>  
+                        </div>
+                    </div>
+                </div>
+             </div>    
+             <div class="container2">
+                <div class="container fs-3 fw-bold d-flex justify-content-start" style="color: rgb(141, 0, 0); margin-bottom: 20px;">
+                    News & Press Releases
+                    
+                </div>
+                <div class="collapse-navbar-collapse" id="navbarNavAltMarkup">
+                              <a class="nav-link1" href="#">-> New technologies to register  your complaint</a>
+                              
+                              <a class="nav-link1" href="#">->New guidlines for DDO,TDO,TALUKA offices</a>
+                              <a class="nav-link1" href="#">->New tools in application tracking system</a>
+                              <a class="nav-link1" href="#">->New policies of Goverment of Gujarat regarding application</a>
+                              <a class="nav-link1" href="#">->guidlines for tracking of approved application</a>
+                              <a class="nav-link1" href="#">->See more---</a>
+                              
+                </div>
+             </div>  
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="response.js"></script>
+<script src="chat.js"></script>
+<script>
+                            window.onload = function () {
+                                var subjectSel = document.getElementById("subject");
+                                var topicSel = document.getElementById("topic");
+                                var chapterSel = document.getElementById("chapter");
+                                for (var x in subjectObject) {
+                                    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+                                }
+                                subjectSel.onchange = function () {
+                                    //empty Chapters- and Topics- dropdowns
+                                    chapterSel.length = 1;
+                                    topicSel.length = 1;
+                                    //display correct values
+                                    for (var y in subjectObject[this.value]) {
+                                        topicSel.options[topicSel.options.length] = new Option(y, y);
+                                    }
+                                }
+                                topicSel.onchange = function () {
+                                    //empty Chapters dropdown
+                                    chapterSel.length = 1;
+                                    //display correct values
+                                    var z = subjectObject[subjectSel.value][this.value];
+                                    for (var i = 0; i < z.length; i++) {
+                                        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+                                    }
+                                }
+                            }
+</script>
+</body>
+</html>

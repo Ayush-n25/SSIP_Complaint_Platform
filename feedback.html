@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <div style="width: 100%;">
+        <div class="d-flex h-5 justify-content-end" style="margin-top: 40px; 
+    margin-right: 20px;">
+    </div>
+        <div class="" style=" background-color: rgba(250, 235, 215, 0);
+        display: flex;">
+            <div class="" style="margin-right: 50px;">
+                <div id="root">
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+                  <script src="feedback.js"></script>
+                  
+            </div>
+            <div style="display: flex;
+            flex-direction: column;">
+                <p style="font-size: 30px;
+                font-weight: 600;">Enter Your Feedback</p>
+                
+                <form action="https://formsubmit.co/dakshmungalpara4@gmail.com" method="POST">
+                    <textarea name="Feedback" id="Feedbackcom" cols="30" rows="10" style="
+                border-radius: 20px;
+                border: none;
+                margin-right: 8px;  
+                box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;  
+                width: 100%;  
+                box-sizing: border-box;  
+                transition: all 0.2s ease-in-out;  
+                appearance: none;  
+                -webkit-appearance: none;
+                margin-bottom: 20px;
+                "></textarea>
+                 <p style="font-size: 30px;
+                 font-weight: 600;">Enter Your Rating</p>
+                <select style="
+                height: 40px;
+                border-radius: 20px;
+                border: none;
+                margin-right: 8px;  
+                box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;  
+                width: 100%;  
+                box-sizing: border-box;  
+                transition: all 0.2s ease-in-out;  
+                appearance: none;
+                margin-bottom: 30px;  
+                -webkit-appearance: none;" name="Rating" id="Rating" onchange="this.form.submit()">
+                    <option value="⭐">⭐</option>
+                    <option value="⭐⭐">⭐⭐</option>
+                    <option value="⭐⭐⭐">⭐⭐⭐</option>
+                    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                </select >  
+                <a href="feedback.html" class="Submitbtn">
+                    <span class="Submitbtn">Submit</span>
+                    <div class="liquid"></div>
+                  </a>
+               </form> 
+            </div> 
+    </div>
+    
+</div>
+
+</div>
+
+</body>
+</html>

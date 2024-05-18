@@ -1,0 +1,1 @@
+"INSERT INTO `contactus` (`Electricity`, `Corruption`, `Funding`, `Transportation `,`Land Acquirement`,`Status`) VALUES ('$Electricity', '$Corruption', '$Funding', '$Transportation','$Land Acquirement','$Status',current_timestamp())";
